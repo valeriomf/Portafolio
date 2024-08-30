@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="subsection">
+                <h1>Maria Fernanda Valerio Lopez</h1>
+                <p>Web Developer Jr.</p>
+                <div class="status">
+                    <p class="p-status">Disponible para el empleo.</p>
+                    <div class="dot"></div>
+                </div>
+                <img class="imagen" src="./imagen/1724733351795.jpg">
+            </div>
+
+            <div class="subsection">
+                <p class="present">Hola, soy estudiante en la carrera de Economía en el Instituto Politécnico Nacional (IPN). Actualmente estudio Desarrollo Web y Cloud Practitioner por Mujer Digital.</p>
+            </div>
+            <div>
+                <button class="btn-black">Trabajar</button>
+                <a href="./fiels/Currículum CV.pdf" download="CV_Maria_Fernanda">
+                    <button class="btn-lined">DESCARGAR CV</button>
+                </a>
+
+                <button class="btn-black">LinkedIn</button>
+                <a href="fiels/Valerio Lopez Maria Fernanda _ LinkedIn.html" download="LinkedIn_Maria_Fernanda">
+                    <button class="btn-lined">LINKEDIN</button>
+                </a>
+            </div>
+        </div>
+    
+        <div class="div9">
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Nombre</label>
+                    <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                    <label for="email_id">Correo electrónico</label>
+                    <input type="email" name="email_id" id="email_id">
+                </div>
+                <div class="field">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <input type="submit" id="button" value="Enviar correo">
+            </form>
+        </div>
+    </div>
+
+    <script src="email.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('tEnhere8uZ1GCY0ab');
+    </script>
+</body>
+</html>
